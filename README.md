@@ -35,6 +35,6 @@ Contributions are welcome! If you want to contribute to this project, please fol
 
 ## Contact
 If you have any questions, suggestions, or issues related to the project, please feel free to contact us:
-- Email: shopdzairy@gmail.com
+- Email: baziziarezki@gmail.com
 - GitHub: [Your GitHub Profile](https://github.com/yourusername)
 - Website: [Shop Dzairy](https://www.shopdzairy.com)
