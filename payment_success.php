@@ -8,56 +8,51 @@ catch(Exception $e)
     die('Erreur : '.$e->getMessage());
 }
 
-session_start();
-if(!isset($_SESSION["uid"])){
-	header("location:index.php");
-}
-include_once("db.php");
-$x = $_POST['x'];
-$i = 0;
-$num = $_POST["num"];
-$user_id= $_POST["user_id"];
-$date = date('d-m-y h:i:s');
-$nom = $_POST["nom"];
-$prenom = $_POST["prenom"];
-$adresse = $_POST["adresse"];
-$wilaya = $_POST["wilaya"];	
-$user_id= $_SESSION['uid'];
-
-while($i < $x){
-$num_order= time().$_SESSION['uid'].$i;
-$product_id = $_POST['item_number_'.$i];
-$amount = $_POST['amount_'.$i];
-$qty =$_POST['quantity_'.$i];
-
-$bdd->exec("INSERT INTO `orders` (userid, product_id, qty, total, p_status,num_order, daate, mob) VALUES ('$user_id','$product_id','$qty','$amount', 'non confirmé', '$num_order', '$date','$num')");
-$i++;
-}
-
 
 if (isset($_POST["add_order"])) {
+	$x = $_POST['x'];
+	$i = 1;
+	$date = date('d-m-y h:i:s');
+	$num_order= time().$_POST['uid'];
+	$user_id= $_POST['uid'];
 
-	include_once("db.php");
-		$sql = "SELECT p_id,qty FROM cart WHERE user_id ='$user_id'";
+	while($i <= $x){
+	$product_id= $_POST['item_number_'.$i];
+	$amount =$_POST['amount_'.$i];
+	$qty =$_POST['quantity_'.$i];
+	$num = $_POST['num'];
+	$bdd->exec("INSERT INTO orders (user_id, mob, product_id, qty, p_status, num_order, daate) VALUES ($user_id, $num, $product_id, $qty, $amount,'COMPLETED',$num_order,$date)");
+	$i++;
+	}
+
+
+		$nom = $_POST["nom"];
+		$prenom = $_POST["prenom"];
+		$num = $_POST["num"];
+		$adresse = $_POST["adresse"];
+		$wilaya = $_POST["wilaya"];
+		$cm_user_id = $_POST["user_id"];
+
+		include_once("db.php");
+		$sql = "SELECT p_id,qty FROM cart WHERE user_id ='$cm_user_id'";
 		$query = mysqli_query($con,$sql);
 		if (mysqli_num_rows($query) > 0) {
 			# code...
 			while ($row=mysqli_fetch_array($query)) {
-			
+			$product_id	= [];
+			$qty = [];
+			$product_id[] = $row["p_id"];
+			$qty[] = $row["qty"];
+			}
+		
+			for ($i=0; $i < count($product_id); $i++) { 
+				$sql = "INSERT INTO orders (user_id,product_id,qty,p_status) VALUES ('$cm_user_id','".$product_id[$i]."','".$qty[$i]."','non confirmé')";
+				mysqli_query($con,$sql);
+			}
 
-			$sql = "DELETE FROM cart WHERE user_id = '$user_id'";
-			while($i < $x){
-				$product_id = $_POST['item_number_'.$i];
-				$amount = $_POST['amount_'.$i];
-				$qty =$_POST['quantity_'.$i];
-				
-				$bdd->exec("INSERT INTO `orders` (userid, product_id, qty, total, p_status,num_order, daate, mob) VALUES ('$user_id','$product_id','$qty','$amount', 'non confirmé', '$num_order', '$date','$num')");
-				$i++;
-				}
-			
+			$sql = "DELETE FROM cart WHERE user_id = '$cm_user_id'";
 			if (mysqli_query($con,$sql)) {
 				?>
-
 					<!DOCTYPE html>
 					<html>
 						<head>
@@ -110,11 +105,13 @@ if (isset($_POST["add_order"])) {
 
 				<?php
 			}
+		}else{
+			header("location:index.php");
 		}
-	
+		
 	}
 
-}
+
 ?>
 
 

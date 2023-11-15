@@ -8,11 +8,17 @@ catch(Exception $e)
         die('Erreur : '.$e->getMessage());
 }
 
+
+
 $user_id= $_SESSION['uid'];
 $adresse = $_POST['adresse'];
 $num= $_POST['num'];
 $wilaya =$_POST['wilaya'];
 $commune =$_POST['commune'];
+session_start();
+if(!isset($_SESSION["uid"])){
+	header("location:index.php");
+}
 
 $bdd->exec("INSERT INTO livraison ( user_id, adresse, num, wilaya, commune) VALUES ( $user_id, $adresse, $num, $wilaya, $commune)");
 

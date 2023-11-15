@@ -109,7 +109,7 @@ if(!isset($_SESSION["uid"])){
 
     </div>
 
-    <nav class="desktop-navigation-menu" id="menubar" style="visibility:hidden;">
+    <nav class="desktop-navigation-menu" id="menubar">
 
       <div class="container">
 
@@ -125,6 +125,252 @@ if(!isset($_SESSION["uid"])){
               
               </ul>
               
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Men's</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Shirt</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Shorts & Jeans</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Safety Shoes</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Wallet</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Women's</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Dress & Frock</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Earrings</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Necklace</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Makeup Kit</a>
+              </li>
+
+            </ul>
+          </li>
+
+
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Hot Offers</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline" id="mobBag"></ion-icon>
+
+        <span class="count" id="mobBagCount">0</span>
+      </button>
+
+      <button class="action-btn">
+        <a href="index.html" style="color: black;">
+        <ion-icon name="home-outline"></ion-icon>
+      </a>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline" id="mobFav"></ion-icon>
+
+        <span class="count" id="mobFavCount">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Home</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Men's</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Shirt</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Shorts & Jeans</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Safety Shoes</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Wallet</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Women's</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Dress & Frock</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Earrings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Necklace</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Makeup Kit</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Jewelry</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Earrings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Couple Rings</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Necklace</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Bracelets</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Perfume</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Clothes Perfume</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Deodorant</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Flower Fragrance</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Air Freshener</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+    
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Hot Offers</a>
+        </li>
+
       </ul>
 
 
@@ -255,7 +501,136 @@ if(!isset($_SESSION["uid"])){
 
           </div>
 
-          
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">best sellers</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/1.jpg" alt="baby fabric shoes" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">baby fabric shoes</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <a href="#1"><ion-icon name="star"></ion-icon></a>
+                      <a href="#2"><ion-icon name="star"></ion-icon></a>
+                      <a href="#3"><ion-icon name="star"></ion-icon></a>
+                      <a href="#4"><ion-icon name="star"></ion-icon></a>
+                      <a href="#5"><ion-icon name="star"></ion-icon></a>
+                    </div>
+
+                    <div class="price-box">
+                      <del>3000 DA</del>
+                      <p class="price">4000 DA</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/2.jpg" alt="men's hoodies t-shirt" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">men's hoodies t-shirt</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <a href="#1"><ion-icon name="star"></ion-icon></a>
+                      <a href="#2"><ion-icon name="star"></ion-icon></a>
+                      <a href="#3"><ion-icon name="star"></ion-icon></a>
+                      <a href="#4"><ion-icon name="star"></ion-icon></a>
+                      <a href="#5"><ion-icon name="star"></ion-icon></a>
+                    </div>
+
+                    <div class="price-box">
+                      <del>1800 DA</del>
+                      <p class="price">2200 DA</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/3.jpg" alt="girls t-shirt" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">girls t-shirt</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <a href="#1"><ion-icon name="star"></ion-icon></a>
+                      <a href="#2"><ion-icon name="star"></ion-icon></a>
+                      <a href="#3"><ion-icon name="star"></ion-icon></a>
+                      <a href="#4"><ion-icon name="star"></ion-icon></a>
+                      <a href="#5"><ion-icon name="star"></ion-icon></a>
+                    </div>
+
+                    <div class="price-box">
+                      <del>500 DA</del>
+                      <p class="price">900 DA</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/4.jpg" alt="woolen hat for men" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">woolen hat for men</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <a href="#1"><ion-icon name="star"></ion-icon></a>
+                      <a href="#2"><ion-icon name="star"></ion-icon></a>
+                      <a href="#3"><ion-icon name="star"></ion-icon></a>
+                      <a href="#4"><ion-icon name="star"></ion-icon></a>
+                      <a href="#5"><ion-icon name="star"></ion-icon></a>
+                    </div>
+
+                    <div class="price-box">
+                      <del>1500 DA</del>
+                      <p class="price"> 1800 DA</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
 
@@ -277,6 +652,105 @@ if(!isset($_SESSION["uid"])){
             <h2 class="title">Products</h2>
 
             <div class="product-grid" id="get_product">
+
+            </div>
+
+          </div>
+
+          <div class="product-featured" id="productft">
+
+            <h2 class="title">Super Promotion</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/shampoo.jpg" alt="shampoo, conditioner & facewash packs" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+                    
+                    <div class="showcase-rating">
+                      <a href="#1"><ion-icon name="star"></ion-icon></a>
+                      <a href="#2"><ion-icon name="star"></ion-icon></a>
+                      <a href="#3"><ion-icon name="star"></ion-icon></a>
+                      <a href="#4"><ion-icon name="star"></ion-icon></a>
+                      <a href="#5"><ion-icon name="star"></ion-icon></a>
+                    </div>
+                    <a href="#">
+                      <h3 class="showcase-title">Naturel shampoo & facewash packs</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                    SHAMPOO 100% NATUREL CONDITIONER & FACEWASH 
+                    WITH OLIVIRA
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">1500 DA</p>
+
+                      <del>2000 DA</del>
+                    </div>
+
+                    <button class="add-cart-btn">add to cart</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          Vendu: <b>20</b>
+                        </p>
+
+                        <p>
+                          Stock: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p id="demo" class="countdown-desc">
+                        DÉPÊCHEZ-VOUS! L'OFFRE SE TERMINE DANS :
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p id="day" class="display-number"></p>
+
+                          <p class="display-text">Days</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p id="hour" class="display-number"></p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p id="minute" class="display-number"></p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p id="second" class="display-number"></p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
 
             </div>
 

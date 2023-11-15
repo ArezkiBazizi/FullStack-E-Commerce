@@ -95,7 +95,7 @@ if(isset($_SESSION["uid"])){
 
         <div class="header-user-actions">
           <button class="action-btn">
-              <img src="assets/images/connexion.png" alt="connexion" id="connexion" class="icon">
+              <img src="../assets/images/connexion.png" alt="connexion" id="connexion" class="icon">
           </button>
 
           <button class="action-btn">
@@ -114,14 +114,14 @@ if(isset($_SESSION["uid"])){
 
     </div>
 
-    <nav class="desktop-navigation-menu" id="menubar"  style='visibility:hidden'>
+    <nav class="desktop-navigation-menu" id="menubar">
 
       <div class="container">
 
         <ul class="desktop-menu-category-list">
 
           <li class="menu-category">
-            <a href="index.php" class="menu-title">Home</a>
+            <a href="index.html" class="menu-title">Home</a>
           </li>
 
           <li class="menu-category">
@@ -132,9 +132,59 @@ if(isset($_SESSION["uid"])){
               
           </li>
 
+          <li class="menu-category">
+            <a href="#" class="menu-title">Men's</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Shirt</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Shorts & Jeans</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Safety Shoes</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Wallet</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Women's</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Dress & Frock</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Earrings</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Necklace</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Makeup Kit</a>
+              </li>
+
+            </ul>
+          </li>
 
 
-      
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Hot Offers</a>
+          </li>
 
         </ul>
 
@@ -324,11 +374,89 @@ if(isset($_SESSION["uid"])){
         </li>
 
         <li class="menu-category">
-          <a href="#hot" class="menu-title">Hot Offers</a>
+          <a href="#" class="menu-title">Hot Offers</a>
         </li>
 
       </ul>
 
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Fren&ccedil;h</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Currency</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">USD &dollar;</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">EUR &euro;</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
 
     </nav>
 
@@ -341,6 +469,14 @@ if(isset($_SESSION["uid"])){
         <ul class="mini-cart-list" id="bagList">
         </ul>
 
+        <div class="mini-shop-total clearfix">
+            <span class="mini-total-heading float-left ">Total:</span>
+            <span class="mini-total-price float-right">$</span>
+            <div class="row">
+							<div class="col-md-8"></div>
+							<div class="col-md-4">
+								<b class="net_total" style="font-size:20px;"> </b>
+        </div>
         <div class="mini-action-anchors">
             <a href="cart.php" class="cart-anchor" id="Commander">Commander</a>
             <a class="checkout-anchor" id="vider">Vider le panier</a>
@@ -397,8 +533,8 @@ if(isset($_SESSION["uid"])){
           <div class="slider__item slide-veste">
             <div class="slider__content grid">
               <div class="columnS">
-                <h1 class="titleS">Jacket</h1>
-                <h1 class="titleS">Edition</h1>
+                <h1 class="titleS">lost</h1>
+                <h1 class="titleS">in space</h1>
               </div>
               <div class="columnS"><img src="assets/images/jacket.png" class="image astronaut"></div>
             </div>
@@ -407,8 +543,8 @@ if(isset($_SESSION["uid"])){
           <div class="slider__item slide-sweat">
             <div class="slider__content grid">
               <div class="columnS">
-                <h1 class="titleS">Hoodies</h1>
-                <h1 class="titleS">For Men</h1>
+                <h1 class="titleS">I Love</h1>
+                <h1 class="titleS">Coffee</h1>
               </div>
               <div class="columnS"><img src="assets/images/hoodie.png" class="image cup"></div>
             </div>
@@ -451,8 +587,137 @@ if(isset($_SESSION["uid"])){
             </ul>
 
           </div>
-                                  
-  
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading">best sellers</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/1.jpg" alt="baby fabric shoes" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">baby fabric shoes</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <a href="#1"><ion-icon name="star"></ion-icon></a>
+                      <a href="#2"><ion-icon name="star"></ion-icon></a>
+                      <a href="#3"><ion-icon name="star"></ion-icon></a>
+                      <a href="#4"><ion-icon name="star"></ion-icon></a>
+                      <a href="#5"><ion-icon name="star"></ion-icon></a>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$5.00</del>
+                      <p class="price">$4.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/2.jpg" alt="men's hoodies t-shirt" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">men's hoodies t-shirt</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <a href="#1"><ion-icon name="star"></ion-icon></a>
+                      <a href="#2"><ion-icon name="star"></ion-icon></a>
+                      <a href="#3"><ion-icon name="star"></ion-icon></a>
+                      <a href="#4"><ion-icon name="star"></ion-icon></a>
+                      <a href="#5"><ion-icon name="star"></ion-icon></a>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$17.00</del>
+                      <p class="price">$7.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/3.jpg" alt="girls t-shirt" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">girls t-shirt</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <a href="#1"><ion-icon name="star"></ion-icon></a>
+                      <a href="#2"><ion-icon name="star"></ion-icon></a>
+                      <a href="#3"><ion-icon name="star"></ion-icon></a>
+                      <a href="#4"><ion-icon name="star"></ion-icon></a>
+                      <a href="#5"><ion-icon name="star"></ion-icon></a>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$5.00</del>
+                      <p class="price">$3.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/4.jpg" alt="woolen hat for men" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">woolen hat for men</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <a href="#1"><ion-icon name="star"></ion-icon></a>
+                      <a href="#2"><ion-icon name="star"></ion-icon></a>
+                      <a href="#3"><ion-icon name="star"></ion-icon></a>
+                      <a href="#4"><ion-icon name="star"></ion-icon></a>
+                      <a href="#5"><ion-icon name="star"></ion-icon></a>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$15.00</del>
+                      <p class="price">$12.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
 
@@ -479,19 +744,104 @@ if(isset($_SESSION["uid"])){
 
           </div>
 
-        
+          <div class="product-featured" id="productft">
 
-            
+            <h2 class="title">Deal of the day</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/shampoo.jpg" alt="shampoo, conditioner & facewash packs" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
                     
+                    <div class="showcase-rating">
+                      <a href="#1"><ion-icon name="star"></ion-icon></a>
+                      <a href="#2"><ion-icon name="star"></ion-icon></a>
+                      <a href="#3"><ion-icon name="star"></ion-icon></a>
+                      <a href="#4"><ion-icon name="star"></ion-icon></a>
+                      <a href="#5"><ion-icon name="star"></ion-icon></a>
+                    </div>
+                    <a href="#">
+                      <h3 class="showcase-title">shampoo, conditioner & facewash packs</h3>
+                    </a>
 
-                     
+                    <p class="showcase-desc">
+                      Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                      dolor dolor sit amet consectetur Lorem ipsum dolor
+                    </p>
 
+                    <div class="price-box">
+                      <p class="price">$150.00</p>
 
-                
+                      <del>$200.00</del>
+                    </div>
 
-             
+                    <button class="add-cart-btn">add to cart</button>
 
-        
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          already sold: <b>20</b>
+                        </p>
+
+                        <p>
+                          available: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p id="demo" class="countdown-desc">
+                        DÉPÊCHEZ-VOUS! L'OFFRE SE TERMINE DANS :
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p id="day" class="display-number"></p>
+
+                          <p class="display-text">Days</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p id="hour" class="display-number"></p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p id="minute" class="display-number"></p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p id="second" class="display-number"></p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
 
         </div>
 
@@ -532,8 +882,8 @@ if(isset($_SESSION["uid"])){
               
                 <div class="service-content">
               
-                  <h3 class="service-title">Livraison Rapide</h3>
-                  <p class="service-desc">Livraison 48 wilaya</p>
+                  <h3 class="service-title">Next Day delivery</h3>
+                  <p class="service-desc">UK Orders Only</p>
               
                 </div>
               
@@ -548,7 +898,7 @@ if(isset($_SESSION["uid"])){
                 <div class="service-content">
               
                   <h3 class="service-title">Service apres vente</h3>
-                  <p class="service-desc">Disponible : 8AM - 11PM</p>
+                  <p class="service-desc">Hours: 8AM - 11PM</p>
               
                 </div>
               
@@ -562,8 +912,8 @@ if(isset($_SESSION["uid"])){
               
                 <div class="service-content">
               
-                  <h3 class="service-title">30% de remboursement</h3>
-                  <p class="service-desc">Pour plus de 10000 DA</p>
+                  <h3 class="service-title">30% money back</h3>
+                  <p class="service-desc">For Order Over $100</p>
               
                 </div>
               
@@ -684,7 +1034,7 @@ if(isset($_SESSION["uid"])){
 
       <div class="container">
         <p class="copyright">
-          Copyright &copy; <a href="#">Arezki Bazizi </a> Tous droit réservés.
+          Copyright &copy; <a href="#">Dzairy Shop</a> Tous droit réservés.
         </p>
 
       </div>
@@ -808,8 +1158,8 @@ var myPix = new Array("./assets/images/products/jewellery-1.jpg","./assets/image
 "./assets/images/products/jacket-1.jpg","./assets/images/products/jacket-2.jpg");
 
 //titre de notification
-var altPix = new Array("Rose Gold Earrings","Perles jewllery ","produit 3","produit 4",
-"sweat-shirt","Chapeau de berly", "produit 7","produit 8","produit 9","produit 10");
+var altPix = new Array("Rose Gold Earrings","produit 2","produit 3","produit 4",
+"produit 5","produit 6", "produit 7","produit 8","produit 9","produit 10");
 
 
 // notification toast variables
@@ -824,7 +1174,7 @@ toastCloseBtn.addEventListener('click', function () {
 
 
 //COMPTE à REBOURS POUR LES PROMOTION
-var deadline = new Date("dec 01, 2022 15:37:25").getTime();
+var deadline = new Date("dec 31, 2022 15:37:25").getTime();
   
 var x = setInterval(function() { 
 var now = new Date().getTime();

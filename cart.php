@@ -22,6 +22,7 @@ else{
 			 <li class="items"><img src="assets/images/icons/log.png" alt=""><a href="login_form.php">Connexion</a></li>
 	   </ul>
 	</div>';
+	
 
 }
 ?>
@@ -46,13 +47,16 @@ else{
 
 <div class="header">
     <div class="connexion">
-    <img src="assets/images/icons/log.png" alt="connexion" id="connexion" class="icon" style='width:50px;'>
+	<a href ='profile.php'>
+	<img src="./assets/images/logo/favicon1.png" alt="Shop Dzairy logo" style='width:85px; position:absolute; right:10px'>
+	<a>
+    <img src="assets/images/icons/log.png" alt="connexion" id="connexion" class="icon" style='width:60px; position:absolute;top:10px;'>
 	</div>
 </div>
 	<div class="container-fluid">
 	<div class="header-logo">
 	<a href ='profile.php'>
-	<img src="./assets/images/logo/favicon1.png" alt="Shop Dzairy logo" class="avatar">
+	
 	<a>
 	</div>
 
@@ -78,7 +82,6 @@ else{
 							<div class="col-md-2 col-xs-2"><b>Price total <?php echo CURRENCY; ?></b></div>
 						</div>
 						<div id="cart_checkout"></div>
-						</div> 
 					</div>
 					<div class="panel-footer"></div>
 				</div>

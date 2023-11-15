@@ -621,89 +621,90 @@ if (isset($_POST["Common"])) {
 						<form action="payment_success.php" method="POST">
 							<input type="hidden" name="cmd" value="_cart">
 							<input type="hidden" name="upload" value="1">
-							<input type="hidden" name="add_order" value="1">
-							<label for="nom">Nom</label>
-							<input type="text" name="nom">
-							<label for="prenom">Prenom</label>
-							<input type="text" name="prenom">
-							<label for="num">Numéro de téléphone mobile</label>
-							<input type="tel" name="num">
-							<label for="wilaya">Wilaya</label>
-							<select name="wilaya" id="wilaya">
-							<option value = "1">Adrar</option>
-							<option value = "2">Chlef</option>
-							<option value = "3">Laghouat</option>
-							<option value = "4">Oum El Bouaghi</option>
-							<option value = "5">Batna</option>
-							<option value = "6">Bejaia</option>
-							<option value = "7">Biskra</option>
-							<option value = "8">Bechar</option>
-							<option value = "9">Blida</option>
-							<option value = "10">Bouira</option>
-							<option value = "11">Tamanrasset</option>
-							<option value = "12">Tebessa</option>
-							<option value = "13">Tlemcen</option>
-							<option value = "14">Tiaret</option>
-							<option value = "15">Tizi Ouzou</option>
-							<option value = "16">Alger</option>
-							<option value = "17">Djelfa</option>
-							<option value = "18">Jijel</option>
-							<option value = "19">Setif</option>
-							<option value = "20">Saida</option>
-							<option value = "21">Skikda</option>
-							<option value = "22">Sidi Bel Abbes</option>
-							<option value = "23">Annaba</option>
-							<option value = "24">Guelma</option>
-							<option value = "25">Constantine</option>
-							<option value = "26">Medea</option>
-							<option value = "27">Mostaganem</option>
-							<option value = "28">MSila</option>
-							<option value = "29">Mascara</option>
-							<option value = "30">Ouargla</option>
-							<option value = "31">Oran</option>
-							<option value = "32">El Bayadh</option>
-							<option value = "33">Illizi</option>
-							<option value = "34">Bordj Bou Arreridj</option>
-							<option value = "35">Boumerdes</option>
-							<option value = "36">El Tarf</option>
-							<option value = "37">Tindouf</option>
-							<option value = "38">Tissemsilt</option>
-							<option value = "39">El Oued</option>
-							<option value = "40">Khenchela</option>
-							<option value = "41">Souk Ahras</option>
-							<option value = "42">Tipaza</option>
-							<option value = "43">Mila</option>
-							<option value = "44">Ain Defla</option>
-							<option value = "45">Naama</option>
-							<option value = "46">Ain Temouchent</option>
-							<option value = "47">Ghardaia</option>
-							<option value = "48">Relizane</option>
-							</select>
-							<label for="commune">Commune, adresse</label>
-							<input type="text" name="adresse" >
-							<input type="hidden" name="add_order" value="1">';
-					  
+									<label for="nom">Nom</label>
+									<input type="text" name="nom">
+									<label for="prenom">Prenom</label>
+									<input type="text" name="prenom">
+									<label for="num">Numéro de téléphone mobile</label>
+									<input type="tel" name="num">
+									<label for="wilaya">Wilaya</label>
+									<select name="wilaya" id="wilaya">
+									<option value = "1">Adrar</option>
+									<option value = "2">Chlef</option>
+									<option value = "3">Laghouat</option>
+									<option value = "4">Oum El Bouaghi</option>
+									<option value = "5">Batna</option>
+									<option value = "6">Bejaia</option>
+									<option value = "7">Biskra</option>
+									<option value = "8">Bechar</option>
+									<option value = "9">Blida</option>
+									<option value = "10">Bouira</option>
+									<option value = "11">Tamanrasset</option>
+									<option value = "12">Tebessa</option>
+									<option value = "13">Tlemcen</option>
+									<option value = "14">Tiaret</option>
+									<option value = "15">Tizi Ouzou</option>
+									<option value = "16">Alger</option>
+									<option value = "17">Djelfa</option>
+									<option value = "18">Jijel</option>
+									<option value = "19">Setif</option>
+									<option value = "20">Saida</option>
+									<option value = "21">Skikda</option>
+									<option value = "22">Sidi Bel Abbes</option>
+									<option value = "23">Annaba</option>
+									<option value = "24">Guelma</option>
+									<option value = "25">Constantine</option>
+									<option value = "26">Medea</option>
+									<option value = "27">Mostaganem</option>
+									<option value = "28">MSila</option>
+									<option value = "29">Mascara</option>
+									<option value = "30">Ouargla</option>
+									<option value = "31">Oran</option>
+									<option value = "32">El Bayadh</option>
+									<option value = "33">Illizi</option>
+									<option value = "34">Bordj Bou Arreridj</option>
+									<option value = "35">Boumerdes</option>
+									<option value = "36">El Tarf</option>
+									<option value = "37">Tindouf</option>
+									<option value = "38">Tissemsilt</option>
+									<option value = "39">El Oued</option>
+									<option value = "40">Khenchela</option>
+									<option value = "41">Souk Ahras</option>
+									<option value = "42">Tipaza</option>
+									<option value = "43">Mila</option>
+									<option value = "44">Ain Defla</option>
+									<option value = "45">Naama</option>
+									<option value = "46">Ain Temouchent</option>
+									<option value = "47">Ghardaia</option>
+									<option value = "48">Relizane</option>
+									</select>
+									<label for="commune">Commune, adresse</label>
+									<input type="text" name="adresse" >
+									<input type="hidden" name="add_order" value="1">';
 							  
 							$x=0;
 							$sql = "SELECT a.product_id,a.product_title,a.product_price,a.product_image,b.id,b.qty FROM products a,cart b WHERE a.product_id=b.p_id AND b.user_id='$_SESSION[uid]'";
 							$query = mysqli_query($con,$sql);
 							while($row=mysqli_fetch_array($query)){
-								echo  	
-									'<input type="hidden" name="item_name_'.$x.' value="'.$row["product_title"].'">
+								$x++;
+								echo 
+									'
+									<input type="hidden" name="item_name_'.$x.'" value="'.$row["product_title"].'">
 									<input type="hidden" name="item_number_'.$x.'" value="'.$row["product_id"].'">
 							  		<input type="hidden" name="amount_'.$x.'" value="'.$row["product_price"].'">
 							  		<input type="hidden" name="quantity_'.$x.'" value="'.$row["qty"].'">';
 								}
-								$x++;
+							  
 							echo   
 
-								'<input type="hidden" name="return" value="/payment_success.php"/>
+								'<input type="hidden" name="return" value="payment_success.php"/>
 					                <input type="hidden" name="notify_url" value="payment_success.php">
+									<input type="hidden" name="add_order" value="1">
 									<input type="hidden" name="cancel_return" value="cancel.php"/>
 									<input type="hidden" name="currency_code" value="DZ"/>
 									<input type="submit" style="float:right;" name="login_user_with_product" class="btn btn-info btn-lg" value="Commander" >
 									<input type="hidden" name="x" value='.$x.'>
-									<input type="hidden" name="user_id" value='.$_SESSION['uid'].'>
+									<input type="hidden" name="uid" value='.$_SESSION["uid"].'>
 								</form>';
 				}
 			}
