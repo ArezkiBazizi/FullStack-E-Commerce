@@ -1,6 +1,10 @@
 # FullStack-E-Commerce
 A full-stack e-commerce project built with HTML,CSS,JS,PHP and bootstrap, with an admin panel Integrated
 
+<img width="949" alt="back" src="https://github.com/ArezkiBazizi/FullStack-E-Commerce/assets/144291687/094eeef5-2eb7-436e-a8d5-5ba0ea1daf67">
+
+
+
 ## Description
 Shop Dzairy is an e-commerce website designed for selling a variety of products online. This project serves as an online platform for users to browse, search, and purchase products conveniently. The website offers features like user authentication, a shopping cart, favorites list, product categories, and more.
 
