@@ -4,6 +4,17 @@ A full-stack e-commerce project built with HTML,CSS,JS,PHP and bootstrap, with a
 ## Description
 Shop Dzairy is an full and responsive e-commerce website designed for selling a variety of products online. This project serves as an online platform for users to browse, search, and purchase products conveniently. The website offers features like user authentication, a shopping cart, favorites list, product categories, and more.
 
+## Features
+- User authentication: Users can create accounts, log in, and access their profiles.
+- Product Display: Products are categorized and displayed in a user-friendly manner.
+- Shopping Cart: Users can add products to their cart and proceed to checkout.
+- Favorites: Users can add products to their favorites list for quick access.
+- Search Functionality: Users can search for specific products by name.
+- Admin panel : Manage admin/category/products 
+- Responsive Design: The website is responsive and works well on various devices.
+
+# Visual
+
 Client versions : 
 <img width="951" alt="1" src="https://github.com/ArezkiBazizi/FullStack-E-Commerce/assets/144291687/317b2753-6239-409e-a748-a598c84806f8">
 <img width="951" alt="2" src="https://github.com/ArezkiBazizi/FullStack-E-Commerce/assets/144291687/e9504879-1c65-4b7f-84ed-4d34a488f721">
@@ -18,18 +29,9 @@ Admin panel :
 <img width="959" alt="9" src="https://github.com/ArezkiBazizi/FullStack-E-Commerce/assets/144291687/e1a95095-b700-45f1-8d96-2c266f51fc3c">
 
 Responsive version :
+
 <img width="184" alt="51" src="https://github.com/ArezkiBazizi/FullStack-E-Commerce/assets/144291687/c2e37fb6-d282-4346-bb67-4d0492a7e340">
 <img width="146" alt="50" src="https://github.com/ArezkiBazizi/FullStack-E-Commerce/assets/144291687/d19c81bd-e970-4fc7-be6b-70cc5f86d221">
-
-## Features
-- User authentication: Users can create accounts, log in, and access their profiles.
-- Product Display: Products are categorized and displayed in a user-friendly manner.
-- Shopping Cart: Users can add products to their cart and proceed to checkout.
-- Favorites: Users can add products to their favorites list for quick access.
-- Search Functionality: Users can search for specific products by name.
-- Admin panel : Manage admin/category/products 
-- Responsive Design: The website is responsive and works well on various devices.
-
 
 
 ## Installation
