@@ -1,12 +1,25 @@
 # FullStack-E-Commerce
 A full-stack e-commerce project built with HTML,CSS,JS,PHP and bootstrap, with an admin panel Integrated
 
-<img width="949" alt="back" src="https://github.com/ArezkiBazizi/FullStack-E-Commerce/assets/144291687/094eeef5-2eb7-436e-a8d5-5ba0ea1daf67">
-
-
-
 ## Description
-Shop Dzairy is an e-commerce website designed for selling a variety of products online. This project serves as an online platform for users to browse, search, and purchase products conveniently. The website offers features like user authentication, a shopping cart, favorites list, product categories, and more.
+Shop Dzairy is an full and responsive e-commerce website designed for selling a variety of products online. This project serves as an online platform for users to browse, search, and purchase products conveniently. The website offers features like user authentication, a shopping cart, favorites list, product categories, and more.
+
+Client versions : 
+<img width="951" alt="1" src="https://github.com/ArezkiBazizi/FullStack-E-Commerce/assets/144291687/317b2753-6239-409e-a748-a598c84806f8">
+<img width="951" alt="2" src="https://github.com/ArezkiBazizi/FullStack-E-Commerce/assets/144291687/e9504879-1c65-4b7f-84ed-4d34a488f721">
+<img width="954" alt="3" src="https://github.com/ArezkiBazizi/FullStack-E-Commerce/assets/144291687/ea38ab02-8db3-484b-8b90-f276b0068419">
+<img width="960" alt="4" src="https://github.com/ArezkiBazizi/FullStack-E-Commerce/assets/144291687/7e89902f-97ce-4c70-a618-49400257d446">
+<img width="960" alt="5" src="https://github.com/ArezkiBazizi/FullStack-E-Commerce/assets/144291687/2d21d035-532f-4d45-b447-ce05baf0b485">
+<img width="960" alt="6" src="https://github.com/ArezkiBazizi/FullStack-E-Commerce/assets/144291687/474b4fa6-6815-4dba-aafb-c82e6b4ef105">
+
+Admin panel : 
+<img width="960" alt="7" src="https://github.com/ArezkiBazizi/FullStack-E-Commerce/assets/144291687/f5f1de3c-f525-4197-bd79-2b5b07252165">
+<img width="948" alt="8" src="https://github.com/ArezkiBazizi/FullStack-E-Commerce/assets/144291687/cf91e5c5-7dcb-4cd4-bdd9-7515375daa46">
+<img width="959" alt="9" src="https://github.com/ArezkiBazizi/FullStack-E-Commerce/assets/144291687/e1a95095-b700-45f1-8d96-2c266f51fc3c">
+
+Responsive version :
+<img width="184" alt="51" src="https://github.com/ArezkiBazizi/FullStack-E-Commerce/assets/144291687/c2e37fb6-d282-4346-bb67-4d0492a7e340">
+<img width="146" alt="50" src="https://github.com/ArezkiBazizi/FullStack-E-Commerce/assets/144291687/d19c81bd-e970-4fc7-be6b-70cc5f86d221">
 
 ## Features
 - User authentication: Users can create accounts, log in, and access their profiles.
